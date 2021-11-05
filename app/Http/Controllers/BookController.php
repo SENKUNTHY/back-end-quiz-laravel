@@ -35,7 +35,7 @@ class BookController extends Controller
         $book->body = $request->body;
         $book->save();
 
-        return response()->json(["Message" => "Book Created", "data" => $book], 200);
+        return response()->json(["Message" => "Book Created", "data" => $book], 201);
     }
 
     /**
